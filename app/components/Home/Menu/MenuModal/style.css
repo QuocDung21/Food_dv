@@ -1,0 +1,14 @@
+.modal-panel{
+    position: relative;
+}
+.modal-panel-icon{
+    display: inline-block;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+}
+.modal-panel-icon:first-child{
+    font-size:26px;
+    cursor: pointer;
+
+}
