@@ -41,7 +41,7 @@ const Promos = () => {
     justify-between my-12 overflow-x-auto">
                 {onPromo.map((promo) => (
 
-                    <PromoCard promo={promo} key={promo.id}/>
+                     <PromoCard promo={promo} key={promo.id}/>
                 ))}
             </section>
         </>
