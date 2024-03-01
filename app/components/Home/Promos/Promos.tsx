@@ -1,5 +1,6 @@
 import React from 'react'
 import PromoCard from './PromoCard';
+import {Title} from "@/app/components/Common/Title/Title";
 
 const Promos = () => {
 
@@ -35,15 +36,12 @@ const Promos = () => {
 
     return (
         <>
-            <div className='max-w-2xl mx-auto my-5 text-center'>
-                <h2 className='text-3xl leading-tight tracking-tight text-gray-600
-        sm:text-4xl'> On Promo</h2>
-            </div>
+            <Title title={"On Promo"}/>
             <section className="flex flex-row items-center py-8 gap-4 md:justify-center 
     justify-between my-12 overflow-x-auto">
                 {onPromo.map((promo) => (
 
-                    <PromoCard promo={promo} key={promo.id} />
+                    <PromoCard promo={promo} key={promo.id}/>
                 ))}
             </section>
         </>
