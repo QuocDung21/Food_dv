@@ -1,5 +1,5 @@
 "use client";
-import {useEffect, useState} from "react";
+import {ChangeEvent, useEffect, useState} from "react";
 import {Disclosure} from "@headlessui/react";
 import Image from "next/image";
 import {HiChevronDown} from "react-icons/hi2";
@@ -43,7 +43,7 @@ const FavoriteModal = ({favorite, user}: Props) => {
                     <div
                         className="absolute -top-[10px] -left-[15px] w-12 h-12 rounded-full bg-white"
                     >
-                        <FavoritesBtn />
+                        <FavoritesBtn sizeN={16} data={favorite} />
                     </div>
                 </div>
                 <div className="mt-2">
@@ -89,7 +89,7 @@ const FavoriteModal = ({favorite, user}: Props) => {
                         onChange={(e) => setInstructions(e.target.value)}
                         type="text"
                         className="w-full h-24 rounded bg-green-50 border border-green-500
-           focus:border-green-500  focus:outline-none focus-visible:ring-green-500 "
+                                   focus:border-green-500  focus:outline-none focus-visible:ring-green-500 "
                     />
                 </div>
 

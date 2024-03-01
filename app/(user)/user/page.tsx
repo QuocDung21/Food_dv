@@ -27,7 +27,7 @@ export default async function User() {
                 <h2 className="text-lg text-center py-5 md:text-2xl lg:text-3xl  leading-tight tracking-tight text-gray-600 sm:text-4xl ">
                     My Profile
                 </h2>
-                <UserDetails/>
+                {/*<UserDetails/>*/}
                 <UserData/>
                 <UserPrefs />
             </div>

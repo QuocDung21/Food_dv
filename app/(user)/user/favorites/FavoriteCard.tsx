@@ -31,7 +31,6 @@ const FavoriteCard = ({favorite, OpenModal}: Props) => {
                     className="object-cover w-full h-ful"
                 />
             </div>
-            445558
             <div className="flex flex-col">
                 <span className="pl-4 font-semibold ">{favorite?.title}</span>
                 <p className="pl-4 text-xs">

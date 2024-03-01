@@ -35,10 +35,12 @@ const LanguageSelectModal = () => {
             >
                 <div className="flex justify-center">
                     <Image
+                        alt={"languages"}
                         className="rounded-lg"
                         width={200}
                         height={100}
                         src="/img/languages.png"/>
+
                 </div>
                 <section className="py-24 grid grid-cols-2  gap-8">
                     {Languages?.map((language) => (

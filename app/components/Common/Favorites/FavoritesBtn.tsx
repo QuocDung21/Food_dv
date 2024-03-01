@@ -12,6 +12,7 @@ import {motion} from "framer-motion"
 import {ANIMATION_BUTTON} from "@/app/lib_ui/Animation/animation";
 import {sizeCustomModal} from "@/app/lib_ui/numberSizeCustom";
 
+
 const FavoritesBtn = ({sizeN, data}: { sizeN: number, data: Menu }) => {
     const {actionEvent} = useEventLocalStorage.getState()
     const [rerender, setRerender] = useState(false);
@@ -29,7 +30,7 @@ const FavoritesBtn = ({sizeN, data}: { sizeN: number, data: Menu }) => {
         notify(msg?.favorite?.delete, toastStatus?.success);
         setRerender(!rerender);
     }
-    const isFavorite = existDataById(data.id, getLocalStorage(key.Favorites));
+    const isFavorite = existDataById(data?.id, getLocalStorage(key.Favorites));
 
     return (
         <>
@@ -55,7 +56,7 @@ const FavoritesBtn = ({sizeN, data}: { sizeN: number, data: Menu }) => {
 
                         }
                     >
-                        <IoMdHeartEmpty size={sizeN + sizeCustomModal} className={"cursor-pointer   "}/>
+                        <IoMdHeartEmpty size={sizeN + sizeCustomModal} className={"cursor-pointer"}/>
                     </motion.button>)
             }
 

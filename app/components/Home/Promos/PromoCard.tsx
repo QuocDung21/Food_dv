@@ -1,9 +1,8 @@
-import {PromoTypes} from "@/types"
 import Image from "next/image"
 import Sale from "@/app/components/Common/Sale/Sale";
 
 type Props = {
-    promo: PromoTypes
+    promo: any
 }
 
 const PromoCard = ({promo}: Props) => {
@@ -11,11 +10,6 @@ const PromoCard = ({promo}: Props) => {
         <article className="flex w-96 rounded-lg shrink-0  shadow-lg text-gray-500 hover:bg-green-200
     hover:text-green-600 transition-all duration-200 ease-out">
             <div className="flex flex-1 relative overflow-hidden">
-                {/*    <span className="absolute rotate-[50deg] top-4 right-1 px-4 py-2 bg-red-500*/}
-                {/*text-white text-center*/}
-                {/*">*/}
-                {/*        {promo.PercentOff} % Off*/}
-                {/*    </span>*/}
                 <Sale PriceSale={promo.PercentOff }/>
                 <Image className="rounded-lg"
                        src={promo.img}
